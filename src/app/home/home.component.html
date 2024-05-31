@@ -1,0 +1,4 @@
+<form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="inputValue" required>
+  <button class="button" type="submit" [disabled]="testForm.invalid">Purchase</button>
+</form>
